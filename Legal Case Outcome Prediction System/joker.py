@@ -19,6 +19,7 @@ ps = PorterStemmer()
 lem = WordNetLemmatizer()
 lst_stopwords = stopwords.words("english")
 
+
 # ✅ Preprocessing function
 def utils_preprocess_text(text, flg_stemm=False, flg_lemm=True, lst_stopwords=None):
     text = re.sub(r'[^\w\s]', '', str(text).lower().strip())
@@ -108,3 +109,4 @@ Suggestions:"""
         "confidence": f"{confidence}%",
         "legal_suggestions": suggestions
     }
+
